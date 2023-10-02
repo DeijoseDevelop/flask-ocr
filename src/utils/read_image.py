@@ -4,7 +4,7 @@ from io import BytesIO
 from PIL import Image
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
+pytesseract.pytesseract.tesseract_cmd = r''
 
 
 class ReadImage(object):

@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 class ConvertImageView(views.MethodView):
     def post(self):
-        image = request.files('image', False)
+        image = request.files.get('image', False)
 
         if not image:
             return CustomResponse({"message": 'Image not found'}, status=404)
